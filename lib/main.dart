@@ -60,7 +60,8 @@ class AuthWrapper extends StatelessWidget {
         if (authService.user != null) {
           // For now, Sandy's email makes her admin
           // Later, this will be stored in the user model
-          if (authService.user!.email == 'sandy@example.com') {
+          if (authService.user!.email == 'sandy@example.com' ||
+              authService.user!.email == 'hms10dev@gmail.com') {
             return AdminDashboardPage();
           }
         }
